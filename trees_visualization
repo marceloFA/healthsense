@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label=<mean_qt_distance &le; 4.775<br/>gini = 0.001<br/>samples = 105476<br/>value = [166605, 83]<br/>class = tr03-0198>, fillcolor="#e58139"] ;
+1 [label=<mean_t &le; 1.05<br/>gini = 0.006<br/>samples = 14488<br/>value = [22867, 74]<br/>class = tr03-0198>, fillcolor="#e5813a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<mean_st_segment &le; 27.1<br/>gini = 0.0<br/>samples = 12675<br/>value = [20084, 1]<br/>class = tr03-0198>, fillcolor="#e58139"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+8 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 8 ;
+9 [label=<mean_p &le; 1.08<br/>gini = 0.05<br/>samples = 1813<br/>value = [2783, 73]<br/>class = tr03-0198>, fillcolor="#e6843e"] ;
+1 -> 9 ;
+10 [label="(...)", fillcolor="#C0C0C0"] ;
+9 -> 10 ;
+19 [label="(...)", fillcolor="#C0C0C0"] ;
+9 -> 19 ;
+36 [label=<stdev_r &le; 0.233<br/>gini = 0.0<br/>samples = 90988<br/>value = [143738, 9]<br/>class = tr03-0198>, fillcolor="#e58139"] ;
+0 -> 36 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+37 [label=<stdev_r &le; 0.178<br/>gini = 0.0<br/>samples = 90980<br/>value = [143725, 7]<br/>class = tr03-0198>, fillcolor="#e58139"] ;
+36 -> 37 ;
+38 [label="(...)", fillcolor="#C0C0C0"] ;
+37 -> 38 ;
+49 [label="(...)", fillcolor="#C0C0C0"] ;
+37 -> 49 ;
+52 [label=<gini = 0.231<br/>samples = 8<br/>value = [13, 2]<br/>class = tr03-0198>, fillcolor="#e99457"] ;
+36 -> 52 ;
+}
